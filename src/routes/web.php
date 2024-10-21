@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [TestController::class, 'index']);
+Route::post('/confirm', [TestController::class, 'confirm']);
+Route::post('/thanks', [TestController::class, 'store']);
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/admin', [AuthController::class, 'index']);
+    Route::post('/register', [AuthController::class, 'create']);
+    Route::post('/login', [AuthController::class, 'store']);
+    Route::post('logout',[AuthController::class,'destroy']);
+}); 
+
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });

@@ -1,0 +1,22 @@
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color: #9d908d;
+    font-weight: bold;
+    position: relative;
+    top: 300px;
+}
+
+.home__button {
+    margin-left: 47%;
+    font-size: 15px;
+    background-color: #8e7b76;
+    color: #fff;
+    border: #8e7b76;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    top: 300px;
+}

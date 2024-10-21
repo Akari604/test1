@@ -1,0 +1,167 @@
+header {
+    margin: 0 auto;
+}
+
+.header__inner {
+    border-bottom: solid 1px #e2dbdb;
+}
+
+.header__logo {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color: #9d908d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color: #9d908d;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.form__group {
+    display: flex;
+    padding-left: 20%;
+    padding-bottom: 20px;
+}
+
+.form__label--item {
+    font-family: "Playfair Display", serif;
+    color: #8e7b76;
+    font-weight: bold;
+}
+
+.form__label--required {
+    font-family: "Playfair Display", serif;
+    color: #f38691;
+    font-weight: bold;
+}
+
+.form__group-name {
+    padding-left: 23%;
+}
+
+.form__group-email {
+    padding-left: 17%;
+}
+
+.form__group-tel {
+    padding-left: 21.5%;
+}
+
+.form__group-address {
+    padding-left: 24.5%;
+}
+
+.form__group-building {
+    padding-left: 25%;
+}
+
+.form__group-kinds {
+    padding-left: 14.5%;
+}
+
+.form__group-content {
+    padding-left: 16%;
+}
+
+.form__input--name input {
+    padding: 5px 10px;
+    width: 260px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #efeeee;
+}
+
+.form__input--tel input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #efeeee;
+}
+
+.form__input--text option, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #efeeee;
+}
+
+.selectbox-3 {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.selectbox-3::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #957777;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-3 select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    color: #755757;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.form__input--text input {
+    padding: 10px;
+    width: 590px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #efeeee;
+}
+
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 590px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #efeeee;
+}
+
+.form__group-gender {
+    padding-left: 25%;
+    display: flex;
+}
+
+.form__input--radio {
+    padding-right: 40px;
+}
+
+.form__button-confirm {
+    margin-left: 47%;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: #8e7b76;
+    color: #fff;
+    border: #8e7b76;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.form__error {
+    color: red;
+}
